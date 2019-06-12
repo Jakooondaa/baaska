@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+		
+	<definition name="adminLayout" template="/WEB-INF/views/admin/layout.jsp">	
+	</definition>
+	
+	<definition name="category-index" extends="adminLayout">
+		<put-attribute name="adminBody" value="/WEB-INF/views/admin/category/index.jsp"></put-attribute>
+	</definition>	
+	<definition name="angilliinJagsaalt" template="/WEB-INF/views/admin/category/list.jsp"></definition>
+	<definition name="category-edit" template="/WEB-INF/views/admin/category/edit.jsp"></definition>
+	<definition name="category-edit-success" template="/WEB-INF/views/admin/category/editSuccess.jsp"></definition>
+	<definition name="category-new" template="/WEB-INF/views/admin/category/new.jsp"></definition>
+	
+	<definition name="blogIndex" extends="adminLayout">
+		<put-attribute name="adminBody" value="/WEB-INF/views/admin/blog/index.jsp"></put-attribute>
+	</definition>	
+	<definition name="blogList" template="/WEB-INF/views/admin/blog/list.jsp"></definition>
+	<definition name="blogEdit" template="/WEB-INF/views/admin/blog/edit.jsp"></definition>
+	<definition name="blogNew" template="/WEB-INF/views/admin/blog/edit.jsp"></definition>
+	
+  
+</tiles-definitions>
